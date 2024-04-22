@@ -1,0 +1,40 @@
+POST http://localhost:4004/auth/register
+Content-Type: application/json
+
+{
+  "username": "henry",
+  "password": "henry",
+  "phone": "0332060880"
+}
+
+
+
+###
+POST http://localhost:4004/auth/login
+Content-Type: application/json
+
+{
+  "username": "henry",
+  "password": "henry"
+}
+
+
+
+###
+POST http://localhost:4004/books
+Content-Type: application/json
+
+{
+    "title": "HIHI",
+    "author": "MinhCao",
+    "type": "Thriller",
+    "introduction": "introsomething",
+    "image": "https://res.cloudinary.com/dazq0jikx/image/upload/v1713239287/film1_o7jbvr.jpg",
+    "price": 160000,
+    "url": "https://docs.google.com/document/d/1KB72Qnuu_DwE7KtyzNIPpPg_jE1E6rjHEj1maB-370o/edit"
+}
+
+
+
+###
+GET http://localhost:4004/books
